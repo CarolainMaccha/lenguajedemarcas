@@ -1,0 +1,39 @@
+/*DISENO A 2 COLUMNAS ANCHO FIJO-AJUSTANDO ALTURA DE COLUMNAS*/
+/*contenedor 1 es el  contenedor principal*/
+#contenedor1{ 
+    width: 80%;
+    margin: 10px auto;/*auto para centrar el contenedor en el navegador.(ancho780delnav)*/
+}
+#contenedor2{
+    display: flex;
+    flex-wrap: wrap;
+   /* float: right; */
+}
+#izquierda{
+flex: 30%;
+background-color: orange;
+  /* float: left; */
+padding: 10px;
+text-align: justify;
+color: white;
+}
+#derecha{
+background-color: purple;
+/* float: right; */
+flex: 65%;
+padding: 10px;
+text-align: justify;
+}
+#head{
+background-color: darkgreen;
+color: white;
+padding: 5px;
+text-align: right;
+font-size: 30px;
+}
+#footer{
+background-color: darkgreen;
+color: white;
+position: relative;
+text-align: right;
+}

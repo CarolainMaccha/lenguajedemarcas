@@ -1,0 +1,24 @@
+h1{
+    text-shadow: 15px 5px 10px pink;
+}
+.ejemplo01{
+    column-count:7;
+    background-color: pink;
+    text-align: justify;
+    padding: 10px;
+    height: 200px;
+}
+.ejemplo02{
+    /*columns:3 100px;*/
+    background-color: lightblue;
+    column-count: 3;
+    column-width: 100px;
+    column-gap: 50px;/*espacio entre columnas*/
+    column-rule: 4px double red;/*una linea entre columnas*/
+}
+.ejemplo03{
+    background-color: lightgreen;
+    column-count: 4;
+    column-width: 50px;
+    
+}

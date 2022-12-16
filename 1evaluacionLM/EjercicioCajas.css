@@ -1,0 +1,46 @@
+
+#caja1{
+    background-color: beige;
+    height: 120px;
+    border: orange 3px solid;
+    margin-top: 5px;
+    text-align: center;
+    color: blue;
+}
+#caja2{
+    background-color: green;
+    height: 650px;
+    width: 30%;
+    float: left;
+    margin-top: 5px ;
+    text-align: center;
+    border: yellow 2px dotted;
+}
+img{
+    width: 90%;
+    height: 50%;
+}
+#caja3{
+    text-align: center;
+    background-color: pink;
+    height: 645px;
+    width: 68%;
+    float: right;
+    margin-top: 5px ;
+    border: fuchsia 3px solid;
+}
+table{
+    width: 40%;
+    height: 30%;
+    text-align: center;
+    border-color: fuchsia;
+}
+#caja4{
+    padding-top: 1%;
+    background-color: blue;
+    color: white;
+    height: 110px;
+    margin-top: 660px ;
+    text-align: center;
+}
+

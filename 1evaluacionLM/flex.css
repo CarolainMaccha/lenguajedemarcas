@@ -1,0 +1,16 @@
+.contenedor{
+    display:flex;
+    /*wrap es para permitir que los elementos puedan disribuirse en mas*/
+    /*wrap-reverse invierte el orden de las líneas*/
+    /*no-wrap no lo permitiría*/
+    flex-wrap: wrap;
+}
+.caja{
+    margin: 0.2em;
+    background:#f3edd6;
+    border: 3px solid #b59214;
+    color: #b59214;
+    padding: 3em;
+    font-size: 2rem;
+    text-align: center;
+}

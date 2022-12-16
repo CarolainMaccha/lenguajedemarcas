@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>.:: Formularios ::.</title>
+	</head>
+	<body>
+		<h2>Formularios en HTML</h2>
+		<form action="validacion.html" name="miformulario" method="get">
+			<fieldset>
+				<label>Nombre: <input type="text" maxlength="50" size="15" name="nombre" value="Pepe" /></label><br/>
+				<label>Apellidos: <input type="text" maxlength="50" size="15" name="apellidos" readonly="yes" /></label>
+			</fieldset>
+			<br/>
+			<fieldset>
+				<label>Contraseña: <input type="password" maxlength="50" size="15" name="password" /></label>
+			</fieldset>
+			<br/>
+			<fieldset>
+				<input type="radio" name="sexo" value="hombre" disabled="yes"/>Hombre
+				<input type="radio" name="sexo" value="mujer" />Mujer
+				<input type="radio" name="sexo" value="nc" checked="yes"/>No contesta
+			</fieldset>
+			<br/>			
+			<fieldset>
+				<input type="radio" name="nacionalidad" value="espanol" checked="yes"/>Español
+				<input type="radio" name="nacionalidad" value="otra" />Otra
+			</fieldset>
+			<br/>	
+			
+			<fieldset>
+				<input type="checkbox" name="aficiones" value="Lectura" checked="yes" />Leer<br/>
+				<input type="checkbox" name="aficiones" value="Cine" />Ver pelis<br/>
+				<input type="checkbox" name="aficiones" value="Los Toros" disabled="yes" />Los toros<br/>
+				<input type="checkbox" name="aficiones" value="El cante" />El  cante flamenco<br/>
+				<input type="checkbox" name="aficiones" value="Pin Pon" />El pin pon
+			</fieldset><br/>	
+			
+			<label>Foto: <input type="file"name="fotografia" /></label><br/><br/>
+
+			<fieldset>
+				<label>Oficina (combobox):
+					<select name="oficina">
+						<option>Madrid</option>
+						<option>Sevilla</option>
+						<option selected="yes">Lisboa</option>
+						<option>Buenos Aires</option>
+					</select>
+				</label>
+			</fieldset>
+			<br/>	
+			
+			<fieldset>
+				<label>Oficina (listbox de selección simple):
+					<select size="4">
+						<option>Madrid</option>
+						<option>Sevilla</option>
+						<option >Lisboa</option>
+						<option selected="yes">Buenos Aires</option>
+						<option>New York</option>
+						<option>Pekín</option>
+						<option>Santiago de Chile</option>
+						<option>Sidney</option>
+					</select>
+				</label>
+			</fieldset>
+			<br/>
+			
+			<fieldset>
+				<label>Oficina (listbox de selección múltiple):
+					<select size="5" multiple="yes">
+						<option>Madrid</option>
+						<option>Sevilla</option>
+						<option >Lisboa</option>
+						<option selected="yes">Buenos Aires</option>
+						<option>New York</option>
+						<option>Pekín</option>
+						<option>Santiago de Chile</option>
+						<option>Sidney</option>
+					</select>
+				</label>
+			</fieldset>
+			<br/>
+			
+			<textarea name="comentarios" rows="8" cols="50" maxlength="250" readonly="yes">Escribe aquí tus comentarios</textarea><br/>
+			
+			<input type="submit" value="Aceptar"/>
+			<input type="reset" value="Limpiar" />
+			<input type="button" value="Botón aún sin funcionalidad asignada" />
+		</form>
+	</body>
+</html>

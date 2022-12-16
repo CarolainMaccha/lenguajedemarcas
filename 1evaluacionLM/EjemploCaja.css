@@ -1,0 +1,45 @@
+/*DISENO A 2 COLUMNAS ANCHO FIJO-AJUSTANDO ALTURA DE COLUMNAS*/
+/*contenedor 1 es el  contenedor principal*/
+#contenedor1{
+    background-color: purple;
+    width: 780px;
+    border:1px solid black;
+    overflow: auto;
+    margin: 5px auto;/*auto para centrar el contenedor en el navegador.(ancho780delnav)*/
+}
+/*contenedor 2 esta dentro contenedor 1 pero se pone a la derecha y sus dos cajas el texto 
+se dezplaza en izq a caja izq y der a caja derecho.*/
+#contenedor2{
+    background-color: orange;
+    width: 500px;
+    float: right;
+}
+/*las cajas izq y der estan en contenedor 2 . e caja iz se desplaza con margin*/
+#izquierda{
+margin-left: -280px;
+width: 260px;/*ancho del derecho es 480.*/
+float: left;
+padding: 10px;
+text-align: justify;
+color: white;
+}
+#derecha{
+float: right;
+padding: 10px;
+text-align: justify;
+}
+#head{
+background-color: darkgreen;
+color: white;
+text-align: right;
+font-size: 30px;
+}
+#footer{
+background-color: darkgreen;
+color: white;
+width: 100%;
+position: relative;
+text-align: right;
+float: left;
+
+}

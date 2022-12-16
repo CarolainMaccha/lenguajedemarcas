@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><center>Formulario</center></h1>
+    <form action="#">
+    <fieldset>
+        <legend> <b> Datos pesonales </b></legend><br>
+        <label for="idnombre">Nombre:&nbsp;&nbsp;</label>
+        <input type="text" id="idnombre">
+        <br><br>
+        <label for="idapellidos">Apellidos:&nbsp;</label>
+        <input type="text" id="idapellidos">
+        <br><br>
+        <label for="idemail">Email:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+        <input type="email" name="" id="idemail">
+        <br><br>
+        <label for="idpassword">Password:</label>
+        <input type="password" id="idpassword">
+        <br><br>
+        <label for="idedad">Edad: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="number" id="idedad" min="18" max="80">
+        <br><br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><b>Disponibilidad</b></legend>
+        Trabajo a jornada: <br><br>
+        <label> <input type="checkbox" name="jornada" value="Parcial">Parcial</label><br>
+        <label><input type="checkbox" name="jornada" value="Completa">Completa</label><br>
+        <label><input type="checkbox"  name="jornada" value="Intensiva">Intensiva</label><br>
+        <label><input type="checkbox"name="jornada" value="Partida">Partida</label>
+
+         <br><br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><b>Titulos o Carnets</b></legend>
+         ¿Tiene carnet de manipulador de alimentos?<br>
+         <label><input type="radio" value="si" name="carnetmanip"> Sí</label>
+        <br>
+         <label><input type="radio" value="no"  name="carnetmanip"> No</label>
+         <br><br>
+         ¿Tiene carnet de conducir?<br>
+         <label><input type="radio" value="si" name="conductor"> Sí</label>
+         <br>
+          <label><input type="radio"value="no" name="conductor"> No</label>
+        <br><br>
+        </fieldset>
+        <br>
+        <center><input type="submit" value="Enviar" style="font-weight:bold;font-size:15px;"></center>
+        
+
+
+
+
+    </form>
+    
+</body>
+</html>

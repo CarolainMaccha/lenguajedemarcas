@@ -1,0 +1,48 @@
+#cajaprin{
+    width:840px;
+    border: 5px solid turquoise;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+
+}
+#cabecera{
+    cursor: wait;
+    background-image: url("animales/bgwoods.jpg");
+    width: 800px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    text-align: right;
+    color: white;
+}
+#izquierda{
+    cursor:url('cursor.png');
+    background-color:  #2C5D1F;
+    float: left;
+    width: 300px;
+    height: 500px;
+    margin-right: 5px;
+    margin-left: 10px;;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+#derecha{
+    background-color: #AAD4A0;
+    float: left;
+    width: 475px;
+    height: 500px;
+    margin-right: 10px;
+    padding: 10px;   
+
+}
+ #pie{
+    background-color:  #55814D;
+    width: 800px;
+    height:20px;
+    margin: 10px;
+    padding: 10px;
+    clear: both;
+}

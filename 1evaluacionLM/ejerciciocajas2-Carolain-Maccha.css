@@ -1,0 +1,67 @@
+#contenedor{
+     width: 580px;
+     margin: 0px auto;
+}
+#cabecera{
+    background-color: orange;
+    border: 2px solid black;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding:10px;
+    font-weight: bold;
+}
+
+#caja1{
+    border: 2px solid black;
+    width: 235px;
+    height: 235px;
+    font-size: 16px;
+    text-align: center;
+    padding:10px;
+    float: left;
+    margin-right: 60px;
+    margin-bottom: 60px;
+   
+}
+#caja2{
+    border: 2px solid black;
+    width: 235px;
+    height: 235px;
+    font-size: 16px;
+    text-align: center;
+    padding:10px;
+    float: left;
+    margin-bottom: 60px;
+   
+}
+
+#caja3{
+    border: 2px solid black;
+    width: 235px;
+    height: 235px;
+    font-size: 16px;
+    text-align: center;
+    padding:10px;
+    float: left;
+    margin-right: 60px;
+}
+
+#caja4{
+    border: 2px solid black;
+    width: 235px;
+    height: 235px;
+    font-size: 16px;
+    text-align: center;
+    padding:10px;
+    float: left;
+}
+#footer{
+    margin-top: 20px;
+    background-color: orange;
+    border: 2px solid black;
+    font-size: 10px;
+    padding:5px;
+    float: left;
+    width: 566px;
+}

@@ -1,0 +1,66 @@
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+      color: pink;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+/*PSEUDOCLASES*/
+p::selection{/*cuando seleccionas se cambia a fondo rosa y letra color rojo.*/
+    color: red;
+    background-color: pink;
+}
+:root{/*hace referencia al body*/
+    background-color: lightgray;
+}
+p:empty{/*parrafo que esta vacio*/
+    height: 40px;
+    background-color: red;
+}
+:target{/*permite seleccionar un elemento activo*/
+    border: 1px solid black;
+    background-color: lightgreen;
+}
+:target::before{
+    content: "Estas aquí-------";
+    color: red;
+}
+p:nth-last-child(3) {/*un p que sea segundo hijo de su padre*/
+    font-weight: bold;
+  }
+li:nth-child(odd){/*pares*/
+    background-color: cyan;
+}
+li:nth-child(even){/*impares*/
+    background-color: yellow;
+}
+p:first-of-type{
+    color:blue;
+}
+hr:first-of-type{
+    border: 3px dashed blue;
+    width: 100px;
+    margin: 0 auto;
+}
+hr:first-of-type:hover{
+    border:3px dashed violet;
+    width: 100px;
+}
+b:only-of-type{/*la unica negrita que hay en el segundo parrafo*/
+    font-size: 1.6m;   
+}
+p:not(#segundo){/*todas las p que no tienen id="segundo*/
+font-family: monospace;
+}
+h1{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+h1 ~ p{
+    font-size: 1em;;
+}

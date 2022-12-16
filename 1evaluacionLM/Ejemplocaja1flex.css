@@ -1,0 +1,46 @@
+/*DISENO A 3 COLUMNAS ANCHO FIJO-AJUSTANDO ALTURA DE COLUMNAS*/
+/*contenedor 1 es el  contenedor principal*/
+#contenedor1{
+   
+   
+    border:1px solid black;
+   
+    margin: 5px auto;/*auto para centrar el contenedor en el navegador.(ancho780delnav)*/
+}
+/*contenedor 2 esta dentro contenedor 1 pero se pone a la derecha y sus dos cajas el texto 
+se dezplaza en izq a caja izq y der a caja derecho.*/
+#contenedor2{
+    background-color: yellow;      
+}
+#contenedor3{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+}
+/*las cajas izq y der estan en contenedor 2 . e caja iz se desplaza con margin*/
+#izquierda{
+flex: 30%;
+padding: 10px;
+text-align: justify;
+color: white;
+}
+#centro{
+    flex: 30%;
+    padding: 10px;
+    text-align: justify;
+    color:orange;
+    font-weight: bolder;
+    }
+#derecha{
+    flex: 30%;
+
+padding: 10px;
+text-align: justify;
+color: green;
+}
+h2{
+    background-color: grey;
+    color: white;
+    z-index: 100;
+    box-shadow: 15px 5px 10px  orange ;
+}

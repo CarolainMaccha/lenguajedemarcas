@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>.:: Formularios ::.</title>
+	</head>
+	<body>
+		<h2>Nuevos elementos en Formularios de HTML5</h2>
+		<p>No olvides que pueden verse de forma distinta en cada navegador y/o sistema operativo y que en estos elementos nuevos las diferencias son mas acusadas que en los anteriores. 
+		También puedes encontrarte que alguno de ellos no funciona o no funciona bien en algún navegador.</p>
+		<form action="validacion.html" name="miformulario" method="get">
+			<p>Nuevos atributos:</p>
+			<label>Nombre (required): <input type="text" name="nombre" required="yes" /></label><br/>
+			<label>Apellidos (autofocus): <input type="text" name="apellidos" autofocus="yes" /></label><br/>
+			<label>Ciudad (autocomplete="off"): <input type="text" name="ciudad" autocomplete="off" /></label><br/>
+			<label>Comentarios (placeholder): <input type="text" name="comentarios" placeholder="Escribe aquí lo que quieras..." size="50"/></label><br/>
+			<label>NIF (pattern): <input type="text" name="nif" pattern="[0-9]{8}[A-Za-z]" required="yes" /></label><br/>
+			
+			<p>Nuevos tipos de input:</p>
+			Email: <input type="email" name="email" /><br/>
+			Página web: <input type="url" name="web" /><br/>
+			Edad: <input type="number" name="edad" min="18" max="100" step="1" value="18" /><br/>
+			Temperatura: <input name="cursor" name="unidades" type="range" min="3" max="40" value="21" step="3" /><br/>
+			Fecha de nacimiento: <input type="date" name="nacimiento" /><br/>
+			Mes de descanso: <input type="month" name="alta" /><br/>
+			Semana de inicio del embarazo: <input type="week" name="vacaciones" /><br/>
+			Hora de inicio de la jornada: <input type="time" min="07:00" max="23:00" step="3600" value="09:00" /><br/>
+			Día y hora de la reunión: <input type="datetime-local" name="fecha2" /><br/>
+			Color de fondo: <input type="color" name="color" value="#c0ffee" /><br/>
+			Buscar: <input type="search" name="busqueda" /> <input type="button" value="Buscar" /><br/>
+			
+			<input type="submit" value="Aceptar"/>
+			<input type="reset" value="Limpiar" />
+		</form>
+	</body>
+</html>

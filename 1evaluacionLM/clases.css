@@ -1,0 +1,17 @@
+.famarillo{
+    background-color: yellow;
+    font-size: 200%;/*tamaño de la fuente*/
+    line-height: 1;/*espacio entre lineas (interlineado)*/
+    text-indent: 4em;/*sangrado*/
+    letter-spacing: 5px;/*espaciado entre letras*/
+    word-spacing: 10px;/*espaciado entre palabras*/
+}
+.verde{color: green;}
+
+
+.verde.famarillo{font-weight: bold;}
+
+ul{
+    list-style-type:lower-alpha;
+
+}

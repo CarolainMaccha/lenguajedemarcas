@@ -1,0 +1,16 @@
+.contenedor{
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+}
+.columna{
+    /*felx-grow flex-shrink flex-basis*/
+    flex: 50%;
+    padding: 10px;
+}
+.derecha{
+    background-color: #bbb;
+}
+.izquierda{
+    background-color: #aaa;
+}

@@ -1,0 +1,15 @@
+th{
+    background-color: aqua;
+    border-left: 1px solid blue;
+}
+td{
+    border-left: 1px solid blue;
+    
+}
+table{
+    text-align: center;
+    border-spacing: 0px;
+}
+.ultcol{
+    border-right: 1px solid blue;
+}

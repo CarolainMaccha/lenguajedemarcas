@@ -1,65 +1,105 @@
 body{
-    text-align:left;
-    background-color: #d9ffc6 ;
-    align-content: center;
+    margin-left:20%;
+    margin-right: 20%;
 }
-
-h1{
-    text-align: center;
+#perfil{
+    width: 100%;
+}
+#izquierda{
+    width: 20%;
+    height: 20%;
+    float: left;
+    
+}
+#derecha{
+    width: 80%;
+    height: 20%;
+    float:left;
+}
+#foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-top:25px; 
+} 
+#nombretitulo{
     font-size: 40px;
-    color:lightseagreen;
+    color:rgb(55, 158, 226);
     text-shadow: 4px 1px aquamarine ;
 }
-
-h4.titulos{
-    color:lightseagreen;
+#listaredes{
+    columns: 2 ;
+}
+.datosicon{
+    list-style: none;
+}
+i{
+    color: #12338b;
+}
+h2{
+   word-spacing: 1px;
+}
+#sobremi{
+    background-color: #2cd6ea;
+   
+}
+#formacion{
+   height: 50%;
+   margin-left: 17%;
+}
+li.titulos{
+    list-style: none;
 }
 
-#fotito{
-    width: 300px;
-    height: 300px;
-    margin-left: 63%;
-}
-table{
-    border: 3px solid purple;
-    margin-left: 10%;
+ table,td{
+    border: 1px solid #2cd6ea;
+    border-style: double;
+    border-spacing: 0;
+    text-align: center;
  }
-
-#lista{
-    margin-top: -15%;
-    margin-left: 25%;
-}
-
+ td.x{
+    background-color: #9ef5ff;
+ }
 #contacto{
     background-color: white;
-    width: 50%;
+    border: 2px solid rgb(5, 5, 63);
+    width: 60%;
     margin: 0px auto;
-    border: 2px solid green;
+    height: 400px;
+    margin-bottom: 10px;
+    text-align: center;
 }
-form{
-   margin-left: 20%;
+h1{ 
+    font-size: 25px;
+    color:#12338b;
 }
 input{
-    background-color: lightblue;
-    border-radius: 10px;
-    margin-bottom: 10px;
-   
+    
 }
 input:focus{
     border: 1px solid black;
 }
 input[type=text],input[type=email],input[type=tel]{
-   width: 60%;
-   padding: 2px;
-}
-
-label{
-    color: green;
-   
+   padding: 1px;
+   background-color: rgb(170, 217, 233);
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 input[type=submit]{
-    background-color: lightgreen;
-    margin: 10px;
-    height: 30px;
-    font-size: 15px;
+    margin-top: 2%;
+    margin-right: 2%;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    color: green;
+    font-weight: bolder;
+}
+input[type=reset]{
+    margin-top: 2%;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: violet;
+    color: red;
+    font-weight: bolder;
+   
 }

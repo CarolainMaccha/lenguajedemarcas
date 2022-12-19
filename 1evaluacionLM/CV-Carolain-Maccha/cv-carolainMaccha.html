@@ -3,31 +3,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="cv-carolainMaccha.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi CV</title>
 </head>
 <body>
     <br>
-    <h1>Carolain Giselle Maccha Masabel</h1>
-    <img id="fotito"src="imagenes/mifoto.png" alt="mifotoperfil">
+    <div id="perfil">
+        <div id="izquierda">
+        <img id="foto"src="imagenes/mifoto.jpg" alt="mifotoperfil">
+        </div>
+        <div id="derecha">
+            <h1 id="nombretitulo">Carolain Giselle Maccha Masabel</h1>
+            <h2>Desarrolladora web junior</h2>
+            <p id="sobremi">
+            Hola, soy Carolain Maccha,Desarrolladora web de Madrid .Soy una persona flexible einnovadora.demuestro 
+            micompromiso con desarollarme profesionalmente y explotar misconocimientos
+            en cualquier área que se solicite.
+            </p>
+            <ul id="listaredes">
+                <li class="datosicon"><i class="fa fa-phone"></i>  Móvil 648 659 461</li>
+                <li class="datosicon"><i class="fa fa-envelope"></i>  e-mail carolinegiselle26@hotmail.com</li>
+                <li class="datosicon"><i class="fa fa-linkedin"></i>  www.linkedin.com/in/carolainmacchamasabel</li>
+            </ul>
+
+        </div>
+    </div>
+    <hr>
+    <div id="formacion">
     <ul id="lista">
-        <li><h4 class="titulos"><b>EXPERIENCIA LABORAL</b></h4>
+       
+        <li  class="titulos"><h4><b>EXPERIENCIA LABORAL</b></h4>
             <ul>
-                <li>Reparación de móviles y tablets</li>
+                <li>Reparación hardware y software de móviles y tablets</li>
                 <li>Operadora de telecomunicaciones</li>
-                <li>Hostelería</li>
                 <li>Microsoldadura de componentes electr&oacute;nicos</li>
+                <li>Emsamblaje de piezas electrónicas</li>
             </ul>
         </li>
-        <li><h4 class="titulos"><b>FORMACI&Oacute;N ACADEMICA</b></h4>
+        <li  class="titulos"><h4><b>FORMACI&Oacute;N ACADEMICA</b></h4>
             <ul>
                 <li>Bachillerato-IES El olivo</li>
                 <li>Grado medio de sistemas microinform&aacute;ticos-IES Villablanca</li>
                 <li>Master de Reparación de moviles y tables (software y hardware)- Phonbwoy</li>
             </ul>
         </li>
-        <li><h4 class="titulos"><b>IDIOMAS</b></h2>
-            <table id="tabla" border="1px">
+        <li class="titulos"><h4><b>IDIOMAS</b></h2>
+            <table>
                 <tr>
                     <td></td>
                     <td><strong>B&aacute;sico</strong></td>
@@ -38,44 +60,47 @@
                     <td>Espa&ntilde;ol</td>
                     <td></td>
                     <td></td>
-                    <td>X</td>
+                    <td class="x"><i class="fa fa-check"></i></td>
                 </tr>
                 <tr>
                     <td>Fr&aacute;nces</td>
                     <td></td>
-                    <td>X</td>
+                    <td class="x"><i class="fa fa-check"></i></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>Italiano</td>
                     <td></td>
                     <td></td>
-                    <td>X</td>
+                    <td class="x"><i class="fa fa-check"></i></td>
                 </tr>
                 <tr>
                     <td>Ingl&eacute;s</td>
                     <td></td>
-                    <td>X</td>
+                    <td class="x"><i class="fa fa-check"></i></td>
                     <td></td>
                 </tr>
             </table>
 
         </li>
+   
     </ul>
+    </div>  
     <br>
+    <hr><br>
     <div id="contacto">
-    <h1>Formulario de contacto</h1>
-    <form action="#">
-        <label for="nombre">Nombre y apellidos: </label><br>
-        <input type="text" name="nombre" id="nombre"/><br>
-        <label>Telefono: <br><input type="tel" max="9" name="telefono"></label><br>
-        <label>e-mail: <br><input type="email" name="email" id="email"></label><br>
-        <label >Asunto <br> <input type="text" name="" id=""></label><br>
-        <label for="">Comentarios:</label><br>
-        <textarea name="comentario" id="" cols="50" rows="7" placeholder="comentario" ></textarea>
-        <br><input type="submit" name="" id="" value="Enviar">
-    </form>
+            <h1>Formulario de contacto</h1>
+            <form form action="mailto:carolinegiselle26@hotmail.com" method="post" enctype="text/plain">
+            <label>Nombre y apellidos: <br> <input type="text" name="nombre" id="nombre" placeholder="Tu nombre"/></label><br>
+            <label>Telefono: <br><input type="tel" max="9" name="telefono" placeholder="Número de telefono"></label><br>
+            <label>e-mail: <br><input type="email" name="email" id="email" placeholder="tu e-mail"></label><br>
+            <label >Asunto <br> <input type="text" name="asunto" placeholder="El asunto"></label><br>
+            <label for="">Comentarios:</label><br>
+            <textarea name="comentario" id="" cols="40" rows="3" placeholder="comentario" ></textarea>
+            <br><input type="submit" name="enviar"  value="Enviar"><input type="reset" name="reset" value="Limpiar">
+            </form>    
     </div>
+    <br>
 
 </body>
 </HTMl>

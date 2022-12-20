@@ -1,0 +1,31 @@
+#contenedor{
+    text-align: center;
+    width: 500px;
+    margin: 0px auto;
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px;
+    margin-top: 25px;
+ }
+ form{
+     text-align: left;
+ }
+ #cajadatos{
+     line-height: 2.5;
+ }
+ #enviar{
+     margin-left: 40%;
+ }
+ body{
+     background: rgb(2,0,36);
+     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(107,8,76,1) 31%, rgba(65,0,255,1) 100%); 
+ }
+ legend{
+     color: blueviolet;
+ }
+ h1{
+     text-shadow: 1px 1px 2px black;
+     text-shadow: 1px 1px 3px violet;
+ 
+ }
+ 

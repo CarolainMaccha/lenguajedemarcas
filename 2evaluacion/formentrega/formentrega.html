@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="fromentrega.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor1">
+        <h1>※☸※☸Academia☸※☸※</h1>
+        <ul>
+            <li class="Clasetitulo"> <b>Clases:</b></li>
+
+            <li class="clases">Baile</li>
+            <li class="clases">Música</li>
+            <li class="clases">Canto</li>
+            <li class="clases">Artesanías</a></li>
+        </ul>
+    </div>
+    <div id="contenedor2">
+    <h1 contenteditable="true">Formulario</h1>
+    <!-- el atributo action  si pones mailto lo envia a ese correo electronico
+        el atributo mailto: jmoralesvasquez@edua.madrid.org
+
+        atributo contenteditable="true/false" en un parrafo,h1 por ej.
+        esa etiqueta podra ser editado  con una casilla de formulario
+
+    -->
+
+    <form action="#" name="primerform" method="post">
+      
+        <fieldset id="cajadatos">
+            <legend><b>Datos personales</b> </legend>
+        <label for="idnombre">Nombre:&nbsp;&nbsp;</label>
+        <input type="text" id="idnombre" name="Nombre" 
+          autocomplete="yes" placeholder="Escribe aqui tu nombre" required/> 
+        <br>
+        <label for="idapellidos">Apellidos:&nbsp;</label>
+        <input type="text"  maxlength="10" id="idapellidos" name="apellido" 
+        placeholder="Tus Apellidos" required/> 
+        <br>
+        <label for="idedad">Edad:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="number" size="5" autofocus="yes" maxlength="5" id="idedad" name="edad" 
+        value="Tú edad" min="18" required/> 
+    
+        <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Lugar de residencia</b></legend>
+            <select name="oficina" id="residencia" multiple="yes">
+                <optgroup label="En españa:">
+                    <option value="">Sevilla</option>
+                    <option value="">Madrid</option>
+                    <option value="">Granada</option>
+                    <option value="">Lisboa</option></optgroup>
+                <optgroup label="En el extranjero:">
+                <option value="">Buenos Aires</option>
+                <option value="" selected="yes">Tokyo</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>  <b>Sexo</b> </legend>
+         <br>
+        <label><input class="checkmark" type="radio" name="sexo" value="Mujer"checked="yes"/>Mujer</label><br>
+        <label><input type="radio" name="sexo" value="Hombre"/>Hombre</label><br>
+        <label><input type="radio" name="sexo" value="Otro" />Otro</label><br>
+        <br>
+        
+        </fieldset><br>
+        <fieldset>
+            <legend><b>Comentarios</b></legend>
+         <textarea name="comentario" id="" cols="30" rows="10" placeholder="escribe un comentario"></textarea>
+        <br><br>
+        <label>Fotografía <input type="file"></label>
+        </fieldset>
+        
+        <br>
+        
+        <input type="submit" name="enviar" value="Aceptar" id="enviar"/>
+        <input type="reset" value="Limpiar" name="clean"/>
+        <button type="button">Funcionalidad por determinar</button>
+      
+    </form>
+    </div>
+    
+</body>
+</html>

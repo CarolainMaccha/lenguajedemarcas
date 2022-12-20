@@ -59,8 +59,8 @@ h1 {
 input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     margin: calc(0.75em - 11px) 0.25rem 0 0;
     vertical-align: top;
     border: 2px solid #ddd;
@@ -68,16 +68,26 @@ input[type="radio"] {
     background: #fff no-repeat center center;
     border-radius : 50%;
 }
-input:where([type="radio"]):where(:active:not(:disabled),:focus){
+input:where( [type="radio"]):where(:active:not(:disabled), :focus){
     border-color : #696;
     outline      : none;
   }
+  input:where( [type="radio"]):disabled{
+    background : #eee;
+  }
+  
   input[type="radio"]:checked{
-    background-image : url('checkbox.svg');
-    background-color: pink;
+    background-image : url('radio.png');
+    background-color: white;
+    border: 2px groove purple;
   }
 #residencia {
     color: violet;
     width: 30%;
     text-align: center;
+    border: 1px solid gray;
 }
+select[multiple] {
+    padding-right: 0;
+    height: 7rem;
+  }

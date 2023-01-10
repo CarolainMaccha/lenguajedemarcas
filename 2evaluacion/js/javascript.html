@@ -1,15 +1,61 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Javascript</h1>
+    <p>Esto va antes del hola mundo</p>
     <script type="text/javascript">
-        alert("Hola mundo");
+        //alert("Hola mundo");
+        /*console.log();
+        x=5;
+        precio=334.56;
+        encontrado=true;*/
+        //no necesita js ";" no tiene problemas sin él.
+        //Solo si hay dos instrucciones en una misma línea
+        /*COMENTARIO 
+         No admite numeros delante las variables pero si detras.
+         por ej:
+         admite sillas13 pero NO 13sillas.
 
+          OPERADORES ARITMETICOS
+          +,-,*,/,%,=
+          X+=2,X*=2,X/=2,++,--
+          ==,>=,<=,<,>,%%(AND),||(OR),!=
+        */
+        document.write("<p>Hola mundo<br/>");
+        iva = 0.21;
+        precio = 55.15;
+        precio_con_iva = precio + (iva * precio);
+        document.write("El precio es: <b>")
+        document.write(precio_con_iva.toFixed(2));
+        document.write("</b></p>");
+
+        if(precio_con_iva >50)
+        document.write("<p>Caro</p>");
+        else
+        document.write("<p>Barato</p>");
+
+        for(i=0,j=10;i<5||j>8;i++,j--)
+        document.write("<p>Hola Mundo</p>");
+        /*VENTANAS EMERGENTES
+            alert()    sale mensaje
+            prompt()   sale mensaje y casilla escribir
+            confirm()   sale mensaje y casilla true or not.
+        */
+       edad = prompt("Escribe tu edad");
+       document.write("<p>"+ edad +"</p>");
+
+       respuesta=confirm("Quieres recibir información");
+       if(respuesta==true)
+       document.write("<p>Te enviaremos un correo</p>");
     </script>
+    <p>Esto va después del hola mundo</p>
 </body>
+
 </html>

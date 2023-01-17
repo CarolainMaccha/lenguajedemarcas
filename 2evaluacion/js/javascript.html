@@ -10,71 +10,16 @@
     <h1 style="color:fuchsia;">Javascript</h1>
     <p>Esto va antes del hola mundo</p>
     <script type="text/javascript">
-        //alert("Hola mundo");
-        /*console.log();
-        x=5;
-        precio=334.56;
-        encontrado=true;*/
-        //no necesita js ";" no tiene problemas sin él.
-        //Solo si hay dos instrucciones en una misma línea
-        /*COMENTARIO 
-         No admite numeros delante las variables pero si detras.
-         por ej:
-         admite sillas13 pero NO 13sillas.
-
-          OPERADORES ARITMETICOS
-          +,-,*,/,%,=
-          X+=2,X*=2,X/=2,++,--
-          ==,>=,<=,<,>,%%(AND),||(OR),!=
-        */
-        /*document.write("<p>Hola mundo<br/>");
-        iva = 0.21;
-        precio = 55.15;
-        precio_con_iva = precio + (iva * precio);
-        document.write("El precio es: <b>")
-        document.write(precio_con_iva.toFixed(2));
-        document.write("</b></p>");
-
-        if(precio_con_iva >50)
-        document.write("<p>Caro</p>");
+        edad=prompt("Introduce tu edad");
+        if(isNaN(edad))//is NaN es una función no un método.
+        document.write("No has introducido un número");
         else
-        document.write("<p>Barato</p>");
-
-        for(i=0,j=10;i<5||j>8;i++,j--)
-        document.write("<p>Hola Mundo</p>");
-        /*VENTANAS EMERGENTES
-            alert()    sale mensaje
-            prompt()   sale mensaje y casilla escribir
-            confirm()   sale mensaje y casilla true or not.
-        */
-        // edad = prompt("Escribe tu edad");
-        //document.write("<p>"+ edad +"</p>");
-
-        //respuesta=confirm("Quieres recibir información");
-        //if(respuesta==true)
-        //document.write("<p>Te enviaremos un correo</p>");
-        /*function holamundo(nombre){
-         texto=document.write("hola mundo"+nombre);
-         return texto;
-        }
-         cadena= holamundo("carolain");
-        */
-        /*function pvp(precio_siniva, iva) {
-            calculo = (precio_siniva * (iva / 100)) + precio_siniva;
-            return calculo.toFixed(2);//tofixed es para fijar decimales
-            //document.write(calculo);
-        }
-        //pvp(100,21);
-        document.write("El precio con IVA es: "+ pvp(100, 21));*/
-        //numeros aleatorios del 0-0,999999999
-        //azar= (Math.random()*20).toFixed(0);
-        function dado(){
-        d=Math.random();
-        d=(d*6)+1;
-        return Math.floor(d);
-        }
-        document.write(dado());
-
+        document.write("El año que viene tendrás "+(Number(edad)+1)+" años");
+        /*if(1.0===1)
+        document.write('"1.0" es igual a 1')
+        else
+        document.write('"1.0" no es igual a 1')*/
+        
     </script>
     <p>Esto va después del hola mundo</p>
 </body>

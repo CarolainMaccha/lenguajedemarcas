@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1 style="color:fuchsia;">Javascript</h1>
     <p>Esto va antes del hola mundo</p>
     <script type="text/javascript">
-        edad=prompt("Introduce tu edad");
+        /*edad=prompt("Introduce tu edad");
         if(isNaN(edad))//is NaN es una función no un método.
         document.write("No has introducido un número");
         else
@@ -19,8 +20,37 @@
         document.write('"1.0" es igual a 1')
         else
         document.write('"1.0" no es igual a 1')*/
+      
+        /*opcion = prompt("Elige tu opcion");
+        switch (opcion) {
+            case "1":
+                document.write("Has elegido la opc 1");
+                break
+            case "2":
+                document.write("Has elegido la opc 1");
+                break
+            case "3":
+                document.write("Has elegido la opc 1");
+                break
+            default:
+                document.write("Eleccion incorrecta")
+        }*/
+        /*var notas=new Array(10);
+        notas[3]=5.5;
+        for(let i=0;i<notas.length;i++){
+            document.write(notas[i]+"</br>")
+        }*/
+        text= "hola";
+        text1=prompt("un Texto:");
+        text2=text+text1;
+        nuevotexto="";
+        for(i=0;i<text2.length;i++)
+        if(text2[i]!=" ")
+            nuevotexto+=text2[i];
+            document.write(nuevotexto);
         
     </script>
     <p>Esto va después del hola mundo</p>
 </body>
+
 </html>

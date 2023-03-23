@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="color:fuchsia;">Javascript</h1>
+
+    <script type="text/javascript">
+
+        /*1-vector 100 posiciones con nnum aleatorios entre 1y 1000 lleno.
+        mostrar superiores o iguales a 500*/
+        function vector1000() {
+            document.write("<b>vector1000:</b></br></br>");
+            var vectormil = new Array(10);
+            document.write("[");
+            cantidad=0;
+            i=0;
+           do{
+                num = Math.floor((Math.random() * 1000) + 1);
+                if (num >= 500) {
+                    vectormil[i] = num;
+                    if(vectormil[i]==vectormil[vectormil.length-1]){
+                        document.write(num);
+                    }
+                    else{
+                    document.write(num + ",");
+                    }
+                    i++;
+                    cantidad++;
+                }
+            }
+            while(cantidad!=vectormil.length){
+
+            }
+            document.write("]");
+
+        }
+        vector1000();
+        document.write("<br/><br/>");
+
+        /*2-cadena sin espacios y nº espacios*/
+        function contarespacios() {
+            document.write("<b>cadena contar espacios:</b><br/>");
+            text = " h o l a c a r o l"//prompt( "Dime una frase");
+            contador = 0;
+            for (x = 0; x < text.length; x++) {
+                if (text.charAt(x) == " ") {
+                    contador++;
+                }
+            }
+            text = text.replace(/\s+/g, '');
+            document.write("<br/>nº de espacios encontrados y suprimidos: " + contador + "<br/>" + text);
+        }
+        contarespacios();
+        document.write("<br/><br/>");
+        /*3-cadena al reves*/
+        function cadenaalreves() {
+            var textalreves = "Hola Mundo";//prompt( "Dime una frase");
+            document.write("<b>cadena alreves:</b><br/><br/>");
+            var nuevaCadena = "";
+            for (var x = textalreves.length - 1; x >= 0; x--) {
+                nuevaCadena += textalreves[x];
+            }
+            document.write(nuevaCadena);
+        }
+        cadenaalreves();
+        document.write("<br/><br/>");
+        /*4-cadena separa caracter par e impar*/
+        function cadenaseparaparimpar() {
+            document.write("<b>cadena separa caracter par e impar:</b><br/><br/>");
+            var textparimpar = "Hola Mundo";//prompt( "Dime una frase");
+            cadena1 = textparimpar.substring(0, textparimpar.indexOf(' '));
+            cadena2 = textparimpar.substring(textparimpar.indexOf(' '), textparimpar.length);
+            //cadena1 los caracteres pares
+            var nuevaCadena1 = "";
+            for (x = 0; x < cadena1.length; x++) {
+                if (x % 2 == 0) {
+                    nuevaCadena1 += cadena1[x];
+                }
+            }
+            for (x = 0; x < cadena2.length; x++) {
+                if (x % 2 == 0) {
+                    nuevaCadena1 += cadena2[x];
+                }
+            }
+            //cadena2 los caracteres impares
+            var nuevaCadena2 = "";
+            for (x = 0; x < cadena1.length; x++) {
+                if (x % 2 != 0) {
+                    nuevaCadena2 += cadena1[x];
+                }
+            }
+            for (x = 0; x < cadena2.length; x++) {
+                if (x % 2 != 0) {
+                    nuevaCadena2 += cadena2[x];
+                }
+            }
+            document.write("cadena1: " + nuevaCadena1 + "<br/>cadena2: " + nuevaCadena2);
+        }
+        cadenaseparaparimpar();
+        document.write("<br/><br/>");
+        /*5-cadena hacker */
+        document.write("<b>cadena hackeada:</b><br/><br/>");
+        function cadenahacker() {
+            var textohackeable = "carolain giselle";//prompt( "Dime una frase");
+            cad = textohackeable.replaceAll('a', '4');
+            cad1 = cad.replaceAll('e', '3');
+            cad2 = cad1.replaceAll('i', '1');
+            cad3 = cad2.replaceAll('o', '0');
+            document.write(cad3);
+        }
+        cadenahacker();
+        document.write("<br/><br/>");
+        /*6-vector 100 posiciones con nnum aleatorios entre 1y 1000 lleno.
+           mostrar el minimo y maximo*/
+        function vector1000minmax() {
+            document.write("<b>vector1000 mayor y menor generado:</b></br></br>");
+            var vectormil = new Array(100);
+            document.write("[");
+            for (i = 0; i < vectormil.length; i++) {
+                num = Math.floor((Math.random() * 1000) + 1);//Math.floor((Math.random() * 1000) + 1);
+                vectormil[i] = num;
+                document.write(num + ",");
+            }
+            //1 forma de hacer el minimo y maximo
+            document.write("]");
+            var maximo = Math.max.apply(null, vectormil);
+            document.write("<br/>Mayor: " + maximo);
+            var minimo = Math.min.apply(null, vectormil);
+            document.write("<br/>Menor: " + minimo);
+            //2 forma de hacer el minimo y maximo
+            var max = vectormil[0];
+            var min = vectormil[0];
+            for (i = 0; i < vectormil.length; i++) {
+                if (vectormil[i] > max) {
+                    max = vectormil[i];
+                }
+                if (vectormil[i] < min) {
+                    min = vectormil[i]
+                }
+            }
+            document.write("<br/>Mayor: " + max);
+            document.write("<br/>min: " + min);
+        }
+        vector1000minmax();
+        document.write("<br/><br/>");
+        /*7-función con argumentos:cuatro números y devuelva cual es el menor de ellos*/
+        num1= 10//prompt("primer numero");
+        num2= 2//prompt("segundo numero");
+        num3= 30//prompt("tercer numero");
+        num4= 8//prompt("cuarto numero");
+        function cuatronumsmin(num1,num2,num3,num4){
+        document.write("<b>El menor de cuatro números:</b></br></br>");
+        /*primera forma
+          numerominimo=Math.min(num1,num2,num3,num4);
+          document.write("El numero minimo es:"+numerominimo);*/
+        //segunda forma
+          var numeros=[num1,num2,num3,num4];
+          for (i = 0; i < numeros.length; i++) {
+            document.write(numeros[i]+",");
+          }
+          var min=numeros[0];
+          for (i = 0; i < numeros.length; i++) {
+            if (numeros[i] < min) {
+                    min = numeros[i];
+                }
+          }
+          document.write("<br/>El numero minimo es:"+min);
+        }
+        cuatronumsmin(num1,num2,num3,num4);
+        document.write("<br/><br/>");
+        /*8-función con argumentos:cuatro números y devuelva cual es el mayor de ellos*/
+        num1= 10//prompt("primer numero");
+        num2= 2//prompt("segundo numero");
+        num3= 30//prompt("tercer numero");
+        num4= 8//prompt("cuarto numero");
+        function cuatronumsmax(num1,num2,num3,num4){
+        document.write("<b>El mayor de cuatro números:</b></br></br>");
+        /*primera forma
+          numerominimo=Math.max(num1,num2,num3,num4);
+          document.write("El numero minimo es:"+numerominimo);*/
+        //segunda forma
+          var numeros=[num1,num2,num3,num4];
+          for (i = 0; i < numeros.length; i++) {
+            document.write(numeros[i]+",");
+          }
+          var max=numeros[0];
+          for (i = 0; i < numeros.length; i++) {
+            if (numeros[i] > max) {
+                    max = numeros[i];
+                }
+          }
+          document.write("<br/>El numero maximo es:"+max);
+        }
+        cuatronumsmax(num1,num2,num3,num4);
+        document.write("<br/><br/>");
+        /*9-función pago dinero en cuotas*/
+        importe = 1500//prompt("importe en euros");
+        meses=5//prompt("numero de meses a fraccionar");
+        document.write("<b>Dinero en cuotas:</b></br></br>");
+        function cuotas(importe,meses){
+            cuota=importe/meses;
+            document.write(meses+" cuotas mensuales de "+cuota+" para pagar "+importe+" euros");
+        }
+        cuotas(importe,meses);
+        document.write("<br/><br/>");
+        /*10- cadena sin vocales*/
+        function cadenasinvocales(){
+            document.write("<b>cadena sin vocales:</b></br></br>");
+            cadena="Hola Mundo";
+            document.writeln(cadena);
+            cadena = cadena.replaceAll('a', '').replaceAll('e', '').replaceAll('i', '').replaceAll('o', '').replaceAll('u', '');
+            document.write(cadena);
+        }
+        cadenasinvocales();
+        document.write("<br/><br/>");
+    </script>
+
+</body>
+
+</html>

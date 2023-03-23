@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="practica1.css">
+    <title>DeTodoUnPoco</title>
+</head>
+
+<body onresize="size()" onload="size()">
+    <h1 contenteditable="true">Titulo</h1>
+    <p id="p1">texto1</p>
+    <p id="p2">texto2</p>
+    <p id="p3">texto3</p>
+    <script type="text/javascript">
+        function size(){
+        document.write(window.innerWidth+"</br>");
+        document.write(window.innerHeight);
+        window.location.href
+        }
+    </script>
+    <form action="#">
+        <h1>Formulario</h1>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre:<input type="text" required></label></br></br>
+            <label>Apellidos:<input type="text" readonly autofocus="yes"></label></br></br>
+            <label>Dni: <input type="number" maxlength="1"></label><br><br>
+            <label>Sexo: <br>
+                <input type="radio" name="sexo" value="H">Hombre<br>
+                <input type="radio" name="sexo" value="M" checked="true">Mujer<br>
+                <input type="radio" name="sexo" value="o">Otro<br>
+            </label>
+            <label>Comida: <br>
+                <input type="checkbox" name="comida" value="H">carne<br>
+                <input type="checkbox" name="comida" value="M" checked="true">arroz<br>
+                <input type="checkbox" name="comida" value="o">pollo<br>
+            </label>
+            <select name="ciudad" id="">
+                <optgroup label="Madrid">Madrid</optgroup>
+                     <option value="Moratalaz" selected>Moratalaz</option>
+                <optgroup label="Fuera">Fuera</optgroup>
+                     <option value="Sevilla">Sevilla</option>
+                     <option value="Cadiz">Cadiz</option>
+                     <option value="Granada">Granada</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label>Telefono:<input type="tel" pattern="[6-7][0-9]{8}"></label></br></br>
+            <label>Dirección:<input type="text"></label></br></br>
+            <label>E-mail:<input type="email"></label></br></br>
+
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <br><br>
+        <input type="reset"value="Vaciar" disabled="yes">
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>

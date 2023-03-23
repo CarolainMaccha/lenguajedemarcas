@@ -1,0 +1,14 @@
+EVENTOS JS EN FORMULARIOS
+onsubmit
+onreset
+
+ejemplo:
+<form action="confirmada.html" onsubmit="return interrumpir(this)"
+    onreset="return confirm('¿De verdad quieres limpiar el formulario?')">
+    <script type="text/javascript">
+        function interrumpir(){
+            return false;
+        }
+    </script>
+
+

@@ -1,0 +1,129 @@
+ JAVASCRIPT
+
+ <link rel="stylesheet" href="______.css"/> //css
+<script type="text/Javascript"> //indicador de lenguaje de los Scripts
+/*En el head*/ <script type="text/javascript" src="funciones.js"></script> /*linkear un .js con todas las funciones que use nuestra páguina */ 
+
+//en JS se pueden poner numeros enteros o con decimales. Para texto sirven tanto comillas dobles " " como las simples ''. No es necesario siempre poner ; al final de las lineas d código pero mejor que lo hagamos.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+alert ("") // tipica ventana de aviso ERROR
+
+//Alert siempre te va a obligar a aceptar antes de seguir ejecutando tu codigo
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+var / let / const / sin definir //declarar variables, puedes crear variables sin declararlas;
+var o sin definir //no hay normas al respecto, solo por ordernarlo y quede mas bonito. son variables globales
+let //son variables locales {}, no se puede sobrescribir, no cambia el tipo, si el contenido.
+const //constantes, no puedes reasiganle valores. Asiganr el valor al declararlo, no despues.
+
+{ las variables locales solo funcionan dentro de los }
+las variables globales funcionan durante todo el código
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+document.write(" ") //escribir en el documento es como el SYSO
+/*para añadir contenido y cambios en la letra han de ponerse las etiquetas dentro de document.write
+ejemp: document.write ("Hola mundo")
+    document.write ("<p><b> El precio es: </b></p>");*/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.toFixed(0) //numero de decimales 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+Math.random();
+//generea numero aleatorio 1> X =>0 (0 - 0.99999999)
+
+Math.floor(); 
+//Truncar TODOS los decimales, solo parte entera
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+if (else){} //como en programacin, los {} no son necesarios si solo pones 1 instrucion. Mejor ponerlos siempre.
+
+for (i=0; i <5; i++){} //igual que programacion
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+function //funciones 
+/*Elementos: nombre (variables/parametros){ }*/
+function nombre (   ){
+    return
+}
+/*se crean y se llaman en el codigo igual que en programacion*/
+nombre():
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+_____.length //tamaño del texto
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+prompt() //pide al usuario introducir contenido, lo guarda como String
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+Number() //transforma el String en número
+
+isNaN() //not a number
+////////////////////////////////////////////////////////////////////////////////////////////////////
+var num = 0;
+var str = "0";
+
+console.log(num == str); // true
+console.log(num === str); // false
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+switch(opcion){ //case se acaba con ' : '
+    case "1":
+        break;
+    case "Barra_baja":
+        document.write(____);
+    case "dos_puntos":
+        documnet.write(::::);
+    default:
+}
+//// 
+default: //se ejecuta cuando la expresion no coincide con ninguno de los case
+////
+break; //salir del bucle
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//las cadenas estan protegidas, no pueden modificarse pero si leerlo
+texto = "hola mundo";
+//texto[3]= "x"; no va a funcionar 
+letra = texto[3]; //el contenido de letra ahora es "a";
+texto.charAt(numero) //devuelve la letra en esa posicion
+texto.toUpperCase() //TODO EN MAYUSCULAS
+texto.toLowerCase() //todo en minusculas
+texto.charCodeAt(numero) //codigo asci de la letra de esa posicion
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+var ____ = new Array(numero);
+____[ ] = _____; //sintaxis java
+
+/*for (int X=0;*/ array.lenght /*<X; x++){ } */
+
+Arrays const;
+
+const cars = ["Saab", "Volvo", "BMW"];
+
+// cambiar elemento:
+cars[0] = "Toyota";
+
+// Añadir elemento:
+cars.push("Audi");
+
+operadores + - / * para calcular
+operador = de asigancion
+ cadenas "Numero:" + " " + numero;
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+<__ id="id1" > </__> //referencias desde js
+<__ class="estilo1"> </__> //estilos
+___ = document.getElementById("id1");
+.innerHTML //leer y modificar el contenido 
+.className //cambiar el nombre de class="", para el css
+
+[
+    _nuevo_ = document.createElement(" /+tipo de elemonte (p, h1...)*/ "); 
+    _texto_ = document.createTextNode(" /*texto que quieres añadir*/ ");
+    _nuevo_.appendChild( /*_texto_*/ ); //vincula un elemento con otro, une la etiqueta p y con un contenido
+    document.body.appendChild( /*_npmbre_*/ ); //une el appendChild con el body
+]//van casi juntas
+ 
+window.innerWidth //da el ANCHO de la pantalla 
+window.innerHeight //da el ALTO de la pantalla 

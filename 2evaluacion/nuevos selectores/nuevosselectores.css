@@ -58,7 +58,7 @@ p:not(#segundo){/*todas las p que no tienen id="segundo*/
 font-family: monospace;
 }
 h1{
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: slidein;
 }
 h1 ~ p{

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="pagina.css">
+    <script type="text/javascript" src="funciones2.js" >
+
+    </script>
+    <meta charset="utf-8">
+    <title>lenguaje</title>
+  </head>
+  <body onload="funcion_hecha_por_mi()" on resize="funcion_hecha_por_mi()">
+    <h1 id="titu" class="estilo1" style="color:blue ;">javascript</h1>
+    <p onclick="alert('Has hecho click')">esto va antes del hola mundo</p>
+    <script type="text/javascript">
+      objeto = document.getElementById("titu");
+      //alert(objeto.innerHTML);
+      //objeto.innerHTML = "hola mundo cruel";
+      //objeto.className = "estilo2";
+      //alert(objeto.className);
+
+      /*EVENTOS
+        onmousedown -> cuando se pulsa sobre el elemento cualquier boton del raton
+        onclick
+        ondblclick
+        onmousemove -> cuando está moviendose dentro
+        onmouseout ->  cuando sale el ratón
+        onmpuseover -> cuando el raton entra en el elemento
+     
+        
+        Estos solo se pueden poner en el body <body>:
+        onmove -> cuando está en movimiento
+        onresize -> cuando modifico el tamaño de la web
+        onload ->inicializar elementos de javascript
+
+      
+      */
+      nuevo = document.createElement("p");
+      //texto = document.createTextNode("hola mundo");
+      //nuevo.appendChild(texto);
+      document.body.appendChild(nuevo);
+      nuevo.className = "estilo2";
+      nuevo.innerHTML = "hola mundo cruel";
+      document.write("ancho: " + window.innerWidth);
+      document.write(" - Alto: " + window.innerHeight);
+    </script>
+    <p>esto va después del hola mundo</p>
+  </body>
+</html>

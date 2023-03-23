@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="pagina.css">
+    <meta charset="utf-8">
+    <style>
+        span{
+            color: rgb(148, 15, 205);
+        }
+    </style>
+    <title>Boletin 3</title>
+</head>
+<body onload="numTitular(),sorteo()">
+    <span>Ejercicio1:</span>
+    <p id="parrafocambiap" onclick="cambiap()" class="estilo1">Abierto</p>
+
+    <span>Ejercicio2:</span>
+    <h1 id="titular" ondblclick="numAleatorio()">titular</h1>
+    <p id="parrafonumAleatorio"></p>
+
+    <span>Ejercicio3: Es el ejercicio del alert sorteo()</span>
+    </br> </br>
+
+    <span>Ejercicio4:</span>
+    <p id="p1" onclick="barajar()">Este es el parrafo 1.si meliora dies ut vina......</p>
+    <p id="p2" onclick="barajar()">Este es el parrafo 2.El murciélago hindú se estrella......</p>
+    <p id="p3" onclick="barajar()">Este es el parrafo 3.En un lugar de la mancha cuyo nombre no quiero recordarme......
+    </p>
+    <p id="p4" onclick="barajar()">Este es el parrafo 4.por banda viento en popa a toda vela no surca el mar sino
+        vuela......</p>
+
+    <span>Ejercicio5:</span>
+    <h1 onmousemove="fantasma()">El fantasma Escritor</h1>
+    <p id="parrafo"></p>
+
+    <span>Ejercicio6:</span>
+    <h1 id="tituloconnumeros" ondblclick="numTitular()"></h1>
+
+    <script type="text/javascript">
+        function cambiap() {//ejercicio1
+            abierto = document.getElementById("parrafocambiap");
+            if (abierto.innerHTML == "abierto") {
+                abierto.innerHTML = "cerrado";
+            }
+            else {
+                abierto.innerHTML = "abierto";
+            }
+        }
+        function numAleatorio() {//ejercicio2
+            aleatorio = Math.floor((Math.random() * 100) + 1);
+            let texto = document.getElementById("parrafonumAleatorio");
+            texto.innerHTML = aleatorio;
+        }
+        function sorteo() {//ejercicio3
+            numsorteo = Math.floor((Math.random() * 9999) + 1);
+            alert(numsorteo);
+        }
+        function barajar() { //ejercicio4
+            var parrafos = new Array(4);
+            parrafos[0] = document.getElementById("p1");
+            parrafos[1] = document.getElementById("p2");
+            parrafos[2] = document.getElementById("p3");
+            parrafos[3] = document.getElementById("p4");
+            var textos = new Array(4);
+            for (let i = 0; i < 4; i++) {
+                textos[i] = parrafos[i].innerHTML;
+            }
+
+            let p = 0;
+            do {
+                let azar = Math.floor(Math.random() * 4);
+                if (textos[azar] != "") {
+                    parrafos[p].innerHTML = textos[azar];
+                    textos[azar] = "";
+                    p++;
+                }
+            }
+            while (p < 4);
+        }
+        function fantasma() {//Ejercicio5
+            p = document.getElementById("parrafo");
+            let texto = p.innerHTML;
+            if (texto.length <= 100) {
+                let letras = "abcde fghi jkl mñno pqrs tuvx yz ";
+                let azar = Math.floor(Math.random() * letras.length);
+                //p.innerHTML=texto+letras.charAt(azar);
+                p.innerHTML = texto + letras[azar];
+            }
+        }
+        function numTitular() {//Ejercicio6
+            titulo = document.getElementById("tituloconnumeros");
+
+            let texto = titulo.innerHTML;
+            if (texto == "") {
+                let numeros = Math.floor((Math.random() * 10) + 1);
+                titulo.innerHTML = texto + numeros;
+            }
+            else {
+                let numeroprimero = parseInt(texto);
+                let numeros2 = Math.floor((Math.random() * 10) + 1);
+                let suma = numeroprimero + numeros2;
+                if (suma < 500) {
+                    titulo.innerHTML = suma;
+                }
+                else {
+                    suma = 0;
+                    titulo.innerHTML = suma;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

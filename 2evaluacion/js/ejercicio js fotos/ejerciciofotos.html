@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8"/>
+<title>Lenguaje de marcas</title>
+<link id="hojacss" rel="stylesheet" href="hojacss.css">
+</head>
+
+<body>
+    <h1 id="titu" onclick="cambiafoto()" class="estilo1">Javascript</h1>
+    <img id="pic" onclick="cambiaestilos()" src="tom.jpg" alt="Tom Cruise" title="El guaperas de Tom"/>
+    <script type="text/javascript">
+        function cambiafoto(){
+            foto=document.getElementById("pic");
+            if(foto.getAttribute("src")=="tom.jpg")
+                foto.setAttribute("src","guapos.jpg");
+            else
+            foto.setAttribute("src","tom.jpg");
+        }
+        function cambiaestilos(){
+            css=document.getElementById("hojacss");
+            css.setAttribute("href","estilos2.css");
+            document.title="Estilo naranjito";
+            //window.location.href="http://www.google.es/"
+        }
+    </script>
+    <p class="estilo2">Esto va después del hola mundo</p>
+    
+</body>
+</html>

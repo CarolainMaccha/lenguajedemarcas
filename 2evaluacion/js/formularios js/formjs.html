@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<form action="confirmada.html" onsubmit="return interrumpir(this)"-->
+        <form action onreset="return confirm('¿De verdad quieres limpiar el formulario?')">
+        <h1 style="color:blue ;">Js y Forms</h1>
+        <label for="idnombre">Nombre:</label>
+        <input onchange="validar(this.form)" type="text" id="idnombre" name="nombre" 
+          autocomplete="yes" placeholder="Escribe aqui tu nombre"/> 
+        <br>
+        <label for="idpassword">Contraseña:</label>
+        <input onchange="validar(this.form)"type="password" id="idpassword" name="contrasenya">
+        <br>
+        <!--<label for="repitepassword">Contraseña:</label>
+        <input onchange="validar()" type="password" id="repitepassword" name="repitecontrasenya">
+        <br> -->
+        <!--<input type="submit" value="Enviar"/>-->
+        <input type="submit" value="Enviar" disabled="yes" name="botonenviar"/>
+        <input type="reset" value="Reestablecer">
+    </form>
+    <script type="text/javascript">
+       function interrumpir(formulario){
+            //alert(formulario.contrasenya.value);
+            //formulario.nombre.disabled=true;
+            if(formulario.nombre.value==formulario.contrasenya.value){
+                alert('El nombre y contraseña son iguales');
+                return false;
+            }
+            if(formulario.contrasenya.value!=formulario.repitecontrasenya.value){
+                alert('las contraseñas no son iguales');
+                return false;
+            }
+            return true;
+        }
+        /*
+        onchange  cuando ha sufrido cambio entre enfocacion y no enfocacion
+        onblur   cuando pierde la enfocacion
+        onfocus  cuando esta enfocado
+
+        boton añadir funcionalidad
+        onclick
+
+        onkeydown   cuando presionas
+        onkeyup     cuando esta arriba el dedo de la tecla
+        onkeypress cuando presiono un tiempo la tecla
+        
+        onmouseover
+        onmouseout
+
+        onselect
+        */
+        function validar(f){ //con la f es para referenciar al 
+            //formulario completo y no solo un input
+            //NUNCA PONER NOMBRE DE VARIABLES= NOMBRE DE LAS FUNCIONES
+          
+            //contraseña almenos 8 caracteres
+            //lo que escribas en el nombre no puede coincidir con contraseña
+            //no debe estar en blanco los campos
+            ok=true;
+            textc=f.contrasenya.value.trim();
+            text=f.nombre.value.trim();
+            if(text==f.contrasenya.value){
+                alert('El nombre y contraseña son iguales');
+                ok=false;
+            }
+            else
+            if(textc.length<8){
+                alert('la contraseña tiene menos de 8 caracteres');
+                ok=false;
+            }
+            else
+            
+            if(text.trim()=="" || textc.trim()==""){
+                alert('el nombre esta vacio');
+                ok=false;
+            }
+           
+            if(ok==true)
+                f.botonenviar.disabled=false;
+            else
+                f.botonenviar.disabled=true;
+        }
+    </script>
+    <p>Esto vá después</p>
+
+</body>
+</html>

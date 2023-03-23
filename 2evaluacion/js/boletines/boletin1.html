@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="color:fuchsia;">Javascript</h1>
+    
+    <script type="text/javascript">
+        //1-los 10 numeros 
+        function numDiez() {
+            document.write("<b>Los 10 números son los siguientes:</b>" + "</br></br>");
+            for (i = 0; i < 10; i++) {
+                document.write(" " + i);
+            }
+        }
+        numDiez();
+        //2- 50 numeros pares
+        document.write("</br></br>");
+        function num50Pares() {
+            contador=0;
+            i=0;
+            document.write("<b>Los 50 números pares son los siguientes:</b></br></br>");
+            for(contador=0;contador<50;i++){
+                if (i%2==0){
+                    contador++;
+                    document.write(" "+i); 
+                }
+            }   
+        }
+        num50Pares();
+        //3-multiplos de 5 de un numero
+        document.write("</br></br>");
+        function multiplos5numerox(){
+            numero=2//prompt("Escribe un número");
+            document.write("<b>Los 5 números multiplos de "+numero+":</b></br></br>")
+            for (i=1;i<=5;i++) {
+                document.write(" "+numero*i);
+            }
+        }
+        multiplos5numerox();
+        document.write("</br></br>");
+        //4-numeros divisibles de 7 menores a 10000
+        function numdivis7antes10000(){
+            document.write("<b>Los numeros divisibles de 7 antes de 10 000: </b></br></br>");
+            for(i=0;i<10000;i++){
+                if  (i%7==0){
+                    document.write(" "+i);
+                }
+            }
+        }
+        numdivis7antes10000();
+        document.write("</br></br>");
+        //5-dado un numero ver si es par o impar
+        function paroimpar(){
+            numParImpar=40//parseInt(prompt("Dime un número:"));
+            document.write("<b>Dado un número es par o impar: </b></br></br>");
+            if(numParImpar%2==0){
+                document.write(numParImpar+" Es par")
+            }
+            else{
+                document.write(numParImpar+" Es impar")
+            }
+        }
+        paroimpar();
+        document.write("</br></br>");
+        //6-dado un numero si es divisible por 3 o no
+        function esdivisiblepor3(){
+            document.write("<b>Dado un número es divisible por 3 o no: </b></br></br>");
+            numdivis3= 20//parseInt(prompt("Dame un número divisible por 3"));
+            if(numdivis3%3==0){
+                document.write(numdivis3+" es divisible por 3")
+            }
+            else{
+                document.write(numdivis3+" no es divisible por 3")
+            }
+        }
+        esdivisiblepor3();
+        document.write("</br></br>");
+        //7-dado un numero simule el precio y aplicar un 21% de iva.
+        function coniva(){
+            document.write("<b>Dado un número añadir 21% de iva: </b></br></br>");
+            precio=100//parseInt(prompt("Dame un precio:"));
+            precioconiva=precio+(precio*0.21)
+            document.write("El precio con iva es: "+precioconiva);
+        }
+        coniva();
+        document.write("</br></br>");
+    
+        //8-dado un numero si es primo o no
+        function esprimo(){
+            document.write("<b>Dado un número es primo o no: </b></br></br>");
+            numPrimo=13//parseInt(prompt("Dime un número primo"));
+            i=2;
+            primo=true;
+            while(i<numPrimo){
+                if(numPrimo%i==0){
+                    primo=false;
+                }
+                i++;
+            }
+            if(primo==true){
+                document.write("El numero "+numPrimo+" es primo")
+            }
+            else{
+                document.write("El numero "+numPrimo+" no es primo")
+            }
+        }
+        esprimo();
+        document.write("</br></br>"); 
+        
+        //9-Generar numero aleatorio entre 0 y 50
+        function mumeroAleatorio(){
+            document.write("<b>Numero aleatorio entre 0 y 50: </b></br></br>");
+            numaleatorio=Math.floor(Math.random()*51);
+            document.write(numaleatorio);
+        }
+        mumeroAleatorio();
+        document.write("</br></br>");
+        //10- dados entre el 1 y el 6
+        function dados(){
+            document.write("<b>Dados del 1 al 6 :</b></br></br>");
+            dado1=Math.floor((Math.random()*6)+1);
+            dado2=Math.floor((Math.random()*6)+1);
+            document.write("dado1: "+dado1+"   "+"dado2: "+dado2);
+        }
+        dados();
+        document.write("</br></br>");
+        //11-dos numeros dados genere un aleatorio entre esos limites
+        function crearAleatorio(){
+            document.write("<b>Crear aleatorio entre dos numeros dados:</b></br></br>");
+            numPrimero=5//parseInt(prompt("NUMERO MINIMO"));
+            numsegundo=10//parseInt(prompt("NUMERO MAXIMO"));
+            aleatorio=Math.floor((Math.random()*(numsegundo-numPrimero+1))+numPrimero);
+           //Math.floor((Math.random()*nºposibilidades)+numerodeinicio)
+            document.write(aleatorio);
+        }
+        crearAleatorio();
+        document.write("</br></br>");
+        //12- si numprimero es > numsegunda limitar al minimo y su maximo
+        function crearAleatorioverificado(){
+            document.write("<b>Crear aleatorio entre dos numeros dados verificados:</b></br></br>");
+            numPrimero=5//parseInt(prompt("NUMERO MINIMO"));
+            numsegundo=10//parseInt(prompt("NUMERO MAXIMO"));
+            if(numPrimero<numsegundo){
+            aleatorio=Math.floor((Math.random()*(numsegundo-numPrimero+1))+numPrimero);
+           //Math.floor((Math.random()*nºposibilidades)+numerodeinicio)
+            document.write(aleatorio);
+            }
+            else{
+                aleatorio=Math.floor((Math.random()*(numPrimero-numsegundo+1))+numsegundo);
+           //Math.floor((Math.random()*nºposibilidades)+numerodeinicio)
+            document.write(aleatorio);
+            }
+        }
+        crearAleatorioverificado();
+        document.write("</br></br>");
+        //13- generar aleatorio del 1 al 49 cada vez que recarge la pagina
+        function laprimitiva(){
+            document.write("<b>Crear num del 1 al 49 la primitiva:</b></br></br>");
+            var num11=Math.floor((Math.random()*49)+1);
+            var num12=Math.floor((Math.random()*49)+1);
+            var num13=Math.floor((Math.random()*49)+1);
+            var num14=Math.floor((Math.random()*49)+1);
+            var num15=Math.floor((Math.random()*49)+1);
+            var num16=Math.floor((Math.random()*49)+1);
+            document.write("la primitiva es: "+num11+" "+num12+" "+num13+" "+num14+" "+num15+" "+num16+" ");
+        }
+        laprimitiva();
+        document.write("</br></br>");
+        //14-la quiniela 1 o x o 2
+        function laquiniela(){
+            document.write("<b>Crear la quiniela (1,2,x):</b></br></br>");  
+         var i;
+         //Bucle para obtener los números aleatorios.
+        for (i = 1; i < 16; i++) {
+        num = Math.floor((Math.random()*3)+1);
+        if (num == 3) {
+	    num = "x";
+        }
+        document.write("Resultado " + i + ": "+num+"<br>");  
+        }
+        }
+        laquiniela();
+        //15-num aleatorio entre el 1 y el 1000 sin parar y se pare en 666
+        function aleatorio1000(){
+            document.write("<br/><b>Aleatorio y en 666 para:</b></br></br>");     
+            do{ 
+                numazar = Math.floor((Math.random()*1000)+1);
+                document.write(numazar+",");    
+            }
+            while (numazar!=666){
+          
+            }
+           
+        }
+        aleatorio1000();
+    </script>
+
+</body>
+
+</html>

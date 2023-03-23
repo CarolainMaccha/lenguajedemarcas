@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practicando</title>
+    <link id="fondito" rel="stylesheet" href="iniciopracticando.css">
+</head>
+<body>
+    <p id="palabra" onmousemove="deReverso()">elefante</p>
+    <p onmousemove="cambiarfondo()">cambiar fondo</p>
+    <script type="text/javascript">
+          function mumeroAleatorioCapicua(){
+            document.write("<b>Numero aleatorio entre 10 y 40: </b></br></br>");
+            contador=0;
+            do{
+            numaleatorio=Math.floor((Math.random()*31)+10);
+            document.write(numaleatorio+" ");
+            contador++;
+           }
+            while(numaleatorio%11!=0){
+            }
+            document.write("</br>contador:"+(contador));
+             }
+        mumeroAleatorioCapicua();
+        function mumeroPrimo(){
+            document.write("<b>Dado un número es primo o no: </b></br></br>");
+            numPrimo=13//parseInt(prompt("Dime un número primo"));
+            i=2;
+            primo=true;
+            while(i<numPrimo){
+                if(numPrimo%i==0){
+                    primo=false;
+                }
+                i++;
+            }
+            if(primo==true){
+                document.write("El numero "+numPrimo+" es primo")
+            }
+            else{
+                document.write("El numero "+numPrimo+" no es primo")
+            }
+             }
+        mumeroPrimo();
+        document.write("</br></br>");
+       // palabra="elefante"//prompt("dime una palabra");
+        function deReverso(){
+            palabras=document.getElementById("palabra");
+            texto=palabras.innerHTML;
+            var nuevaCadena = "";
+            for (var x = texto.length - 1; x >= 0; x--) {
+                nuevaCadena += texto[x];
+            }
+            palabras.innerHTML=nuevaCadena;
+        }
+        deReverso();
+        function cambiarfondo(){
+            fondocss=document.getElementById("fondito");
+           // fondocss.setAttribute("href","fondopracticando.css");
+          
+            if(fondocss.getAttribute("href")=="iniciopracticando.css")
+               { fondocss.setAttribute("href","fondopracticando.css");
+                document.title="Estilo rosa";}
+            else{
+            fondocss.setAttribute("href","iniciopracticando.css");  
+            document.title="Estilo aqua";
+             }    
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Boletin 4</title>
+</head>
+    <form action="#" onsubmit="return validarcaptcha(this)">
+        <span>Ejercicio1:</span>
+        <label for="contra">contraseña:</label>
+        <input onchange="validar(this.form)" type="password" id="contra" name="contrasenia">
+        </br>
+        <label for="contra2">Repite contraseña:</label>
+        <input  onchange="validar(this.form)" type="password" id="contra2" name="contrasenia2">
+        </br>
+        <span>Ejercicio2</span>
+        </br>
+        <label >Captcha <input type="text" name="captcha"></label>
+        <p id="numero" onclick="num()">Clic aqui</p>
+        </br>
+        <input type="submit" name="botonenviar" value="Enviar">
+        <input type="reset" value="Vaciar"> 
+        
+    </form>
+    <script type="text/javascript">
+        //ejercicio1y2
+        function validar(formulario){
+            ok=true;
+             clave1=formulario.contrasenia.value.trim();
+             clave2=formulario.contrasenia2.value.trim();
+            if(clave1!=clave2){
+                alert('las contraseñas no son iguales');
+                ok= false;
+            }
+            else{
+            if(clave1==""||clave2==""){
+                alert('campos vacios');
+                ok= false;
+             }
+             else{
+                ok=true;
+             }
+            }
+            if(ok==true){
+                formulario.botonenviar.disabled=false;
+            }
+            else{
+                 formulario.botonenviar.disabled=true;
+            }
+        }
+        //ejercicio3
+        numaleatorio=Math.floor((Math.random()*999998)+100000)
+        function num(){
+            pa=document.getElementById("numero");
+            texto=pa.innerHTML;
+            pa.innerHTML=numaleatorio;
+        }
+        function validarcaptcha(f){
+            if(f.captcha.value==numaleatorio){
+                alert('esta bien captcha');
+                return true;
+               
+            }
+            else{
+                alert('no has enviado nada');
+                return false;
+               
+            }
+        }
+
+
+
+    </script>
+</html>
